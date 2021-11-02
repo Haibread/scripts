@@ -4,7 +4,7 @@ groupadd --system prometheus
 echo -e "Creating user prometheus \n"
 useradd -s /sbin/nologin --system -g prometheus prometheus
 
-wget https://github.com/prometheus/node_exporter/releases/download/v1.1.2/node_exporter-1.1.2.linux-amd64.tar.gz -P /tmp
+wget https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz -P /tmp
 
 echo -e "Extracting node exporter \n"
 tar xvf /tmp/node_exporter-*linux-amd64.tar.gz -C /tmp/
