@@ -4,7 +4,7 @@ groupadd --system blackbox_exporter
 echo -e "Creating user blackbox exporter \n"
 useradd -s /sbin/nologin --system -g blackbox_exporter blackbox_exporter
 
-wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.19.0/blackbox_exporter-0.19.0.linux-amd64.tar.gz -P /tmp
+wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.23.0/blackbox_exporter-0.23.0.linux-amd64.tar.gz -P /tmp
 
 echo -e "Extracting blackbox exporter \n"
 tar xvf blackbox_exporter-*.linux-amd64.tar.gz -C /tmp/
